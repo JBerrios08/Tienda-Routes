@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { colors } from "./theme";
 
 export const Button = styled.button`
-  background: #dff5dd;
+  background: ${colors.light};
   border-radius: 3px;
-  border: 2px solid #bf4f74;
-  color: #bf4f74;
+  border: 2px solid ${ colors.rosado };
+  color: ${ colors.rosado };
   font-size: 0.9em;
   margin: 0;
   padding: 0.25em 1em;
@@ -15,7 +16,7 @@ export const Button = styled.button`
 
 export const Header = styled.header`
   display: flex;
-  background-color: #333;
+  background-color: ${colors.gris};
   color: white;
   flex-direction: row;
   align-content: center;
