@@ -2,14 +2,20 @@ import React from "react";
 import "./App.css";
 import { Routes, Route, Link, useParams, Outlet, NavLink as NL } from "react-router-dom";
 import { Button, Header, BtnLink, DetailsCont, CenteredCont, CenteredDiv } from "./estilos-componentes/styles-comp";
+import { ThemeProvider } from "styled-components";
+import { ButtonVM, invertTheme, theme } from "./estilos-componentes/theme";
 
 const Home = () => {
   return (
-    <div className="features">
-      <h2>Bienvenido</h2>
-      <p>Somos una tienda online de celulares.</p>
-      <Link to="/search-page"><Button>Ver Más</Button></Link>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="features">
+        <h2>Bienvenido</h2>
+        <p>Somos una tienda online de celulares.</p>
+        <ThemeProvider theme={invertTheme}>
+          <Link to="/search-page"><ButtonVM> Ver Más</ButtonVM></Link>
+        </ThemeProvider>
+      </div>
+    </ThemeProvider>
   );
 };
 
