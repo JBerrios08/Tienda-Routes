@@ -2,17 +2,17 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { colors } from "./theme";
 
-export const Button = styled.button`
-  background: ${colors.light};
-  border-radius: 3px;
-  border: 2px solid ${ colors.rosado };
-  color: ${ colors.rosado };
-  font-size: 0.9em;
-  margin: 0;
-  padding: 0.25em 1em;
-  margin-bottom: 1em;
-  cursor: pointer;
-`;
+// export const Button = styled.button`
+//   background: ${colors.light};
+//   border-radius: 3px;
+//   border: 2px solid ${ colors.rosado };
+//   color: ${ colors.rosado };
+//   font-size: 0.9em;
+//   margin: 0;
+//   padding: 0.25em 1em;
+//   margin-bottom: 1em;
+//   cursor: pointer;
+// `;
 
 export const Header = styled.header`
   display: flex;
@@ -44,6 +44,7 @@ export const DetailsCont = styled.div`
   margin-top: 1.2em;
   width: 100%;
   margin: 0 auto;
+  margin-top: 40px;
   h3, h4{
     color: #333;
   }
@@ -55,10 +56,18 @@ export const CenteredCont = styled.div`
   margin: 0 auto;
 `;
 
+export const CenterInfo = styled.div`
+  justify-content: center;
+  text-align: center;
+
+  ul li{
+    display: inline-block;
+  }
+`;
+
 export const CenteredDiv = styled.div`
   /* display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center; */
-
 `;

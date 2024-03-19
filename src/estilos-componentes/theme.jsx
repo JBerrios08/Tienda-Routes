@@ -12,7 +12,7 @@ export const colors = {
 
 export const theme = {
     fg: '#bf4f74',
-    bg: 'white'
+    bg: '#dff5dd'
 }
 
 export const invertTheme =  ({fg, bg}) => ({
@@ -20,7 +20,7 @@ export const invertTheme =  ({fg, bg}) => ({
     bg: fg
 });
 
-export const ButtonVM = styled.button`
+export const Button = styled.button`
     color: ${props => props.theme.fg};
     border: 2px solid ${props => props.theme.fg};
     background: ${props => props.theme.bg};
