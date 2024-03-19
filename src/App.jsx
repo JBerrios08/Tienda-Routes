@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route, NavLink as NL } from "react-router-dom";
-import { Header, BtnLink, DetailsCont, CenteredCont, CenterInfo, CenteredDiv } from "./estilos-componentes/styles-comp";
+import { Header, CenteredCont} from "./estilos-componentes/styles-comp";
 import Home from "./components/Home";
 import SearchPage from "./components/SearchPage";
 import Celulares from "./components/Celulares";
